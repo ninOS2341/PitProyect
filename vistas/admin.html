@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/CSS/vastyle.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="/JS/animaciones.js"></script>
+        <title>Vista Administrador</title>
+
+    </head>
+
+    <body>
+
+        <div id="Pagp" >
+
+            <div id="Menu" onmouseenter="MenuDentro()"
+                onmouseleave="MenuFuera()">
+
+                <div id="Logo">
+                    <div id="Logo-img">
+
+                    </div>
+                </div>
+
+                <aside id="Secciones">
+
+                </aside>
+
+            </div>
+
+            <section id="Dashboard">
+                <div id="Cabeza" >
+                    <div id="Titulo">
+                        <h1>Administradores</h1>
+                    </div>
+
+                    <div id="Info">
+                        <div id="Back" onclick="MenuinfoDentro()">
+                            <div id="Foto"></div>
+                            <div id="Nombre">
+                                <p>Nombre Arbuz</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <main id="Principal" onclick="eleminarInfo()">
+                    <div id="Seccion">
+                        <h2 id="NSeccion" class="Texto">Resumen</h2>
+                        <h4 id="area" class="Texto">Empledados</h4>
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>
