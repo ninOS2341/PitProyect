@@ -30,7 +30,7 @@ h1{
     width: 20rem;
     height: 30rem;
    
-    grid-template-rows: 0.7fr 1fr;
+    grid-template-rows: 30% 70%;
     background-color: whitesmoke;
     box-shadow:1px 1px 15px 1px whitesmoke;
     
@@ -82,12 +82,7 @@ h1{
     
 }
 
-#Botones{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 9rem
-}
+
 .boton{
     border-style: dashed;
     border-radius: 1rem;
