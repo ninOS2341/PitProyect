@@ -7,11 +7,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="CSS/vastyle.css">
+        <link rel="stylesheet" href="/CSS/vastyle.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <script src="JS/animaciones.js"></script>
+        <script src="/JS/animaciones.js"></script>
         <title>Vista Administrador</title>
+
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 8px;
+                text-align: center;
+                color: #000000;
+            }
+            th {
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+            }
+        </style>
 
     </head>
 
@@ -19,18 +39,12 @@
 
         <div id="Pagp" >
 
-            <div id="Menu" onmouseenter="MenuDentro()"
+            <div id="Menu" class="menuCon" onmouseenter="MenuDentro()"
                 onmouseleave="MenuFuera()">
+                <p id="TituloMenu" >Menú</p>
+                
 
-                <div id="Logo">
-                    <div id="Logo-img">
-
-                    </div>
-                </div>
-
-                <aside id="Secciones">
-
-                </aside>
+                
 
             </div>
 
@@ -57,6 +71,48 @@
                         <h2 id="NSeccion" class="Texto">Resumen</h2>
                         <h4 id="area" class="Texto">Empledados</h4>
                     </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Número de Seguridad</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Correo</th>
+                                <th>Teléfono</th>
+                                <th>Contrato</th>
+                                <th>Área</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123-45-6789</td>
+                                <td>Juan</td>
+                                <td>Pérez</td>
+                                <td>juan.perez@example.com</td>
+                                <td>123-456-7890</td>
+                                <td>Indefinido</td>
+                                <td>Ventas</td>
+                            </tr>
+                            <tr>
+                                <td>987-65-4321</td>
+                                <td>Ana</td>
+                                <td>Gómez</td>
+                                <td>ana.gomez@example.com</td>
+                                <td>987-654-3210</td>
+                                <td>Temporal</td>
+                                <td>Recursos Humanos</td>
+                            </tr>
+                            <tr>
+                                <td>456-78-1234</td>
+                                <td>Carlos</td>
+                                <td>Ramírez</td>
+                                <td>carlos.ramirez@example.com</td>
+                                <td>456-789-1234</td>
+                                <td>Indefinido</td>
+                                <td>Tecnología</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </main>
 
