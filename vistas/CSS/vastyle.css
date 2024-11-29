@@ -1,0 +1,225 @@
+/*
+Colores
+#031617
+#032f30
+#0a7075
+#0c969c
+#6ba3be
+#274d60
+*/
+h1 ,h2 ,h3, h4{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr .2fr;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 130vh;
+    color: #ffff;
+
+}
+footer{
+    background-color: black;
+}
+
+#Pagp{
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: 2% 98%;
+}
+
+#Menu{
+    display: grid;
+    position: absolute;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+
+    background-color: #0c969c;
+
+    
+}
+#divMenu{
+    width: 100%;
+    height: 100%;
+}
+.menuExt{
+    
+    width :20rem;
+}
+.menuCon{
+    grid-template-columns: 90% 10% ;
+    width :100%;
+}
+#TituloMenu{
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    writing-mode: vertical-rl;
+}
+
+#Logo{
+    display: grid;
+    align-items: center;
+    justify-items: center;   
+
+}
+#Logo-img{
+    width: 90%;
+    height: 90%;
+    
+}
+#Secciones{
+
+}
+
+#Dashboard{
+    display: grid;
+    grid-template-rows: 10%;
+}
+#Cabeza{
+    display: grid;
+    background-color: #6ba3be;
+    grid-template-columns: 70% 30%;
+}
+#Info{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+}
+#Back{
+    display: grid;
+    position: relative;
+    width: 95%;
+    
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #0c969c;
+    
+}
+#divInfo{
+    
+    display: grid;
+    position: absolute;
+    justify-items: center;
+    align-items: baseline;
+
+    grid-template-rows: .2fr 1fr .5fr;
+
+    top: 12%;
+    left: 73%;
+
+    border-radius: 2rem;
+    
+    
+    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border: solid black 2px;
+
+    height: 40%;
+    width: 25%;
+
+    padding-top:20px;
+   
+    
+}
+
+#infoT{
+    display: grid;
+    text-align: center;
+    
+    color: #031617;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+}
+#infoC{
+    
+    width: 100%;
+    height: 100%;
+    color: #000000;
+}
+#divOpciones{
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.infoOp{
+   
+    color: #0c969c;
+    cursor: pointer;
+    text-decoration: none;
+}
+.infoOp:hover{
+    border-bottom:solid #000000 2px;
+}
+
+#infoP{
+    width: 100%;
+    height: 100%;
+    color: #0c969c;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#infoBtn{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    
+    border-radius: 50px;
+    padding: 5% 15% 5% 15%;
+}
+
+#Foto{
+    width: 3rem;
+    height: 3rem;
+    background-color: #031617;
+    border-radius:  50px;
+}
+.Texto{
+    margin: 10px;
+}
+#Titulo{
+    text-align: center;
+}
+
+
+#Principal{
+    display: grid;
+
+    grid-template-rows: 10% 90%;
+    background-color: #ffffff;
+}
+#Contenedor{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+.contenedores{
+    
+    width: 90%;
+    height: 80%;
+
+    box-shadow:0px 0px 15px 0px #ffffff;
+    border-radius: 1rem;
+    background-color: #032f30;
+}

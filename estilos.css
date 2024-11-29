@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    
+    width: 100%;
+    height: 100vh;
+   }
+
+#Fondo{
+    
+    filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("fondo.jpg") ;
+    background-size: 100% 100%;
+}
+h1{
+    margin: 0px;
+}
+
+#Contendor{
+    display: grid;
+    
+    width: 20rem;
+    height: 30rem;
+   
+    grid-template-rows: 30% 70%;
+    background-color: whitesmoke;
+    box-shadow:1px 1px 15px 1px whitesmoke;
+    
+    position: absolute;
+}
+
+#Bienvenida{
+    background-image: url("fondo.jpg");
+    background-size: cover;
+}
+.welcome{
+    color: white;
+    margin-left: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ;
+}
+
+#Formulario{
+    display: grid;
+    
+    grid-template-rows: 0.2fr 1fr 0.4fr;
+    
+}
+#Titulo{
+    color: #47ac94;
+    text-align: center;
+    
+}
+#Cuerpo{
+    text-align: center;
+}
+.inputs{
+    margin-left: 1vh;
+    border-color: rgb(0, 0, 0,0);
+    border-bottom-color: #47ac94;
+    padding: 1vh;
+    width: 70%;
+}
+.inputs:focus{
+    transition: 1s;
+    border-color: #47ac94;
+}
+
+#Footer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.boton{
+    border-style: dashed;
+    border-radius: 1rem;
+    padding: 1vh;
+    border-color: #0A7075;
+    color: #0A7075;
+    width: 10rem;
+    
+}
+.boton:hover{
+    
+    border-style: double;
+    border-color:#46c5a7 ;
+    color: #46c5a7;
+}
+
