@@ -7,22 +7,23 @@ Colores
 #6ba3be
 #274d60
 */
-h1 ,h2 ,h3, h4{
+h1,p {
+    font-size: calc(1vw + 1em);
     margin: 0;
     padding: 0;
 }
 body{
     display: grid;
-    grid-template-rows: 1fr .2fr;
-
+ 
     padding: 0;
     margin: 0;
 
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     color: #ffff;
 
 }
+
 footer{
     background-color: black;
 }
@@ -37,31 +38,97 @@ footer{
 
 #Menu{
     display: grid;
-    position: absolute;
+    position: relative;
     position: relative;
     align-items: center;
     justify-items: center;
 
-    background-color: #0c969c;
+    background-color: #0a6b70;
 
     
 }
-#divMenu{
+#divCuerpo{
+    display: grid;
+    grid-template-rows: 20% 80%;
     width: 100%;
     height: 100%;
 }
+#divE{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: .5fr 1fr;
+    width: 100%;
+    height: 100%;;
+}
+#logE{
+    background-image: url(../Azztech.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+#nombreE{}
+
+#divOps{
+    width: 100%;
+    height: 20%;
+}
+/*
+    divU y divR se pueden hacer class para ahorrar lineas, pero 
+    ya me dio hueva w  
+*/
+#divU{
+    transition: 1s;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 20% 84%;
+    align-items: center;
+    justify-items: center;
+    border-bottom:solid #0a6b70 2px;
+    width: 60%;
+}
+#divU:hover{
+    transition: 1s;
+    margin-top: 10px;
+    cursor: pointer;
+    border-bottom:solid #000000 2px;
+    width: 85%;
+
+}
+#divR{
+    transition: 1s;
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: 20% 60%;
+    align-items: center;
+    justify-items: center;
+    border-bottom:solid #0a6b70 2px;
+    width: 60%;
+}
+#divR:hover{
+    transition: 1s;
+    margin-top: 10px;
+    cursor: pointer;
+    border-bottom:solid #000000 2px;
+    width: 90%;
+}
 .menuExt{
     
-    width :20rem;
+    grid-template-columns: 90% 10% ;
+    width :1300%;
 }
 .menuCon{
-    grid-template-columns: 90% 10% ;
+    
     width :100%;
 }
+/*
+16px 0 1em
+*/
 #TituloMenu{
     margin: 0;
-    font-size: 20px;
-    letter-spacing: 10px;
+    cursor: pointer;
+    font-size: calc(1vw + .6em);
+    letter-spacing: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     writing-mode: vertical-rl;
 }
@@ -87,8 +154,12 @@ footer{
 }
 #Cabeza{
     display: grid;
+    
     background-color: #6ba3be;
     grid-template-columns: 70% 30%;
+}
+#Titulo{
+    font-size: calc(1vw + 1em);
 }
 #Info{
     display: grid;
@@ -187,6 +258,8 @@ footer{
 }
 
 #Foto{
+    background-image: url(../arbuz.png);
+    background-size: cover;
     width: 3rem;
     height: 3rem;
     background-color: #031617;
@@ -204,7 +277,17 @@ footer{
     display: grid;
 
     grid-template-rows: 10% 90%;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
+}
+#Seccion{
+    color: #0c969c;
+    
+    
+    
+    
+}
+#area{
+   margin-left: 2.5%;
 }
 #Contenedor{
     display: grid;
@@ -222,4 +305,113 @@ footer{
     box-shadow:0px 0px 15px 0px #ffffff;
     border-radius: 1rem;
     background-color: #032f30;
+}
+
+
+
+/*tabla*/
+
+#contenedor {
+    margin: 0 auto;
+    width: 95%;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: 0 14px 18px rgba(39, 9, 9, 0.1);
+}
+
+.estiloT {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.estiloT th, .estiloT td {
+    padding: 10px 15px;
+    
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.estiloT thead th {
+    border-radius: 20px 20px 0px 0px ;
+    background-color: #6ba3be;
+    font-weight: bold;
+    
+}
+.estiloT tbody tr{
+    
+    transition: 1s;
+    color: #7f9283;
+}
+.estiloT tbody tr:hover {
+    transition: 1s;
+    background-color: #bbb2b248;
+    color: black;
+}
+
+
+.infoEmpleado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoEmpleado img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.estado {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.estado.online {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.estado.offline {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+.barraProceso {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.proceso {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+
+.barraProceso.multi {
+    display: flex;
+    height: 8px;
+}
+
+.progresoVerde {
+    background-color: #28a745;
+}
+
+.progresoNaranja {
+    background-color: #ffc107;
+}
+
+.horasJornada {
+    font-size: 0.9em;
+    color: #555;
 }

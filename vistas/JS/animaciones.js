@@ -1,28 +1,95 @@
 MenuDentro = () => {
-    var menu = document.getElementById('Menu');
-    const divMenu = document.createElement('div');
-     
 
-    divMenu.id = 'divMenu';
+    console.log("Dentro de menu");
 
-    menu.className = 'menuExt';
+    if (document.getElementById('divCuerpo')) {
+        console.log("Ya esta abiero el div");
+    } else {
+        const Menu = document.getElementById('Menu');
+        const divCuerpo = document.createElement('div');
+        const TituloMenu = document.createElement('p');
+        const divE = document.createElement('div');
+        const logoE = document.createElement('div');
+        const nombreE = document.createElement('p');
+        const divOps = document.createElement('div');
+        const divU = document.createElement('div');
+        const textoU = document.createElement('p');
+        const iconoU = document.createElement('i');
+        const divR = document.createElement('div');
+        const textoR = document.createElement('p');
+        const iconoR = document.createElement('i');
 
-    document.getElementById('Menu').replaceWith(menu);
-    document.getElementById('TituloMenu').remove();
-    
+        divCuerpo.id = 'divCuerpo';
+        TituloMenu.id = 'TituloMenu';
+        divE.id = 'divE';
+        logoE.id = 'logE';
+        nombreE.id = 'nombreE';
+        divOps.id = 'divOps';
+        divR.id = 'divR';
+        divU.id = 'divU';
+
+        Menu.className = 'menuExt';
+        iconoU.className = 'fa-solid fa-users';
+        iconoR.className = 'fa-solid fa-address-card';
+
+        document.getElementById('TituloMenu').remove();
+        document.getElementById('Menu').replaceWith(Menu);
+
+        nombreE.innerText = 'The \u03C0it Corps'
+        TituloMenu.innerText = 'Menú';
+        textoU.innerText = 'Trabajadores';
+        textoR.innerText = 'Registro';
+
+
+        Menu.appendChild(divCuerpo);
+        Menu.appendChild(TituloMenu);
+
+        divCuerpo.appendChild(divE);
+        divCuerpo.appendChild(divOps);
+
+        divE.appendChild(logoE);
+        divE.appendChild(nombreE)
+
+        divOps.appendChild(divU);
+        divOps.appendChild(divR)
+
+        divU.appendChild(iconoU);
+        divU.appendChild(textoU);
+
+        divR.appendChild(iconoR);
+        divR.appendChild(textoR);
+        divR.onclick = mainRegistro = () => {
+            if (document.getElementById('contenedor')) {
+                const NSeccion = document.getElementById('NSeccion');
+                const area = document.getElementById('area');
+                const contenedor = document.getElementById('contenedor');
+
+                contenedor.remove();
+                console.log("Cambio Registro");
+
+
+                NSeccion.innerText = 'Registro';
+                area.innerText = 'Usuarios';
+            } else {
+                console.log("Ya se cambio el div")
+            }
+
+        }
+
+    }
+
+
 }
 
 MenuFuera = () => {
-    var menu = document.getElementById('Menu');
-    const TituloMenu = document.createElement('p');
-    
-    TituloMenu.id = 'TituloMenu';
-    TituloMenu.innerText = 'Menú';  
-    menu.className = 'menuCon';
+    const Menu = document.getElementById('Menu');
 
-    document.getElementById('Menu').replaceWith(menu);
-    document.getElementById('Menu').appendChild(TituloMenu);
-    document.getElementById('divMenu').remove();
+
+    Menu.className = 'menuCon';
+    const eliminar = document.getElementById('divCuerpo');
+    eliminar.remove();
+
+
 }
 MenuinfoDentro = () => {
 
@@ -80,13 +147,15 @@ MenuinfoDentro = () => {
 }
 eleminarInfo = () => {
 
-
-    var divInfo = document.getElementById("divInfo");
-
-    if (divInfo.id == "divInfo") {
+    if (document.getElementById("divInfo")) {
 
         divInfo.remove();
         console.log("elnimar");
+    } else {
+        console.log("No existe e div");
+
     }
 
 }
+
+
