@@ -13,7 +13,7 @@ MenuDentro = () => {
         const nombreE = document.createElement('p');
         const divOps = document.createElement('div');
         const divU = document.createElement('div');
-        const textoU = document.createElement('p');
+        const textoU = document.createElement('a');
         const iconoU = document.createElement('i');
         const divR = document.createElement('div');
         const textoR = document.createElement('p');
@@ -55,6 +55,7 @@ MenuDentro = () => {
 
         divU.appendChild(iconoU);
         divU.appendChild(textoU);
+        textoU.href = 'admin.html';
 
         divR.appendChild(iconoR);
         divR.appendChild(textoR);
@@ -64,18 +65,196 @@ MenuDentro = () => {
                 const area = document.getElementById('area');
                 const contenedor = document.getElementById('contenedor');
 
+                /*Creacion del formulario*/
+                const formulario = document.createElement('form');
+                const formularioT = document.createElement('div');
+                const formularioC = document.createElement('div');
+                const formularioP = document.createElement('div');
+                const titulo = document.createElement('h2');
+                const fotografiaL = document.createElement('label');
+                const fotografiaI = document.createElement('input');
+                const NSL = document.createElement('label');
+                const NSI = document.createElement('input');
+                const nombreL = document.createElement('label');
+                const nombreI = document.createElement('input');
+                const apellidosL = document.createElement('label');
+                const apellidosI = document.createElement('input');
+                const direccionL = document.createElement('label');
+                const direccionI = document.createElement('input');
+                const emaiL = document.createElement('label');
+                const emaiI = document.createElement('input');
+                const telefonoL = document.createElement('label');
+                const telefonoI = document.createElement('input');
+                const edadL = document.createElement('label');
+                const edadI = document.createElement('input');
+                const curpL = document.createElement('label');
+                const curpI = document.createElement('input');
+                const rfcL = document.createElement('label');
+                const rfcI = document.createElement('input');
+                const nssL = document.createElement('label');
+                const nssI = document.createElement('input');
+                const boton = document.createElement('button');
+                const divF = document.createElement('div');
+                const divNS = document.createElement('div');
+                const divN = document.createElement('div');
+                const divA= document.createElement('div');
+                const divD = document.createElement('div');
+                const divE = document.createElement('div');
+                const divT = document.createElement('div');
+                const divEd = document.createElement('div');
+                const divC = document.createElement('div');
+                const divNSS = document.createElement('div');
+
+                formulario.id = 'Registro';
+                formulario.action = '';
+                formulario.method = 'post';
+                titulo.innerText = 'Registro Para Usuarios (RPU)';
+
+                fotografiaL.innerText = 'Foto';
+                fotografiaI.type='file';
+                fotografiaI.id = 'fotografia';
+                fotografiaI.name = 'fotografia';
+                fotografiaI.accept = 'image/*';
+                fotografiaI.required = '';
+
+                NSL.innerText = 'Numero de Seguridad';
+                NSI.type = "number";
+                NSI.id='id_empleado';
+                NSI.name = "id_empleado";
+                NSI.required = '';
+
+                nombreL.innerText = 'Nombre(s)';
+                nombreI.type = 'text';
+                nombreI.id = 'nombre';
+                nombreI.name = 'nombre';
+                nombreI.maxLength = '50';
+                nombreI.required = '';
+
+                apellidosL.innerText = 'Apellidos';
+                apellidosI.type = 'text';
+                apellidosI.id = 'apellido';
+                apellidosI.name = 'apellido';
+                apellidosI.maxLength = '100';
+                apellidosI.required = '';
+
+                edadL.innerText = 'Edad';
+                edadI.type = 'number';
+                edadI.id = 'edad';
+                edadI.name = 'edad';
+                edadI.max = '99';
+                edadI.required = '';
+                
+                direccionL.innerText = 'Direccion';
+                direccionI.type = 'text';
+                direccionI.id = 'direccion';
+                direccionI.name = 'direccion';
+                direccionI.maxLength = '200';
+                direccionI.required = '';
+
+                emaiL.innerText = 'Email';
+                emaiI.type = 'email';
+                emaiI.id = 'email';
+                emaiI.name = 'email';
+                emaiI.maxLength = '100';
+                emaiI.required = '';
+
+                telefonoL.innerText = 'Teléfono';
+                telefonoI.type = 'text';
+                telefonoI.id = 'telefono';
+                telefonoI.name = 'telefono';
+                telefonoI.maxLength = '15';
+                telefonoI.required = '';
+
+                curpL.innerText = 'CURP';
+                curpI.type = 'text';
+                curpI.id = 'curp';
+                curpI.name = 'curp';
+                curpI.maxLength = '18';
+                curpI.required = '';
+
+                rfcL.innerText = 'RFC';
+                rfcI.type = 'text';
+                rfcI.id = 'rfc';
+                rfcI.name = 'rfc';
+                rfcI.maxLength = '13';
+                rfcI.required = '';
+
+                nssL.innerText = 'Numero de Seguro Social'
+                nssI.type = 'text';
+                nssI.id = 'nss';
+                nssI.name = 'nss';
+                nssI.maxLength = '12';
+                nssI.required = '';
+
+                boton.type = 'submit';
+                boton.innerText = 'Guardar Empleados';
+
+                formularioT.id = 'formularioT';
+                formularioC.id = 'formularioC';
+                formularioP.id = 'formularioP';
+
                 contenedor.remove();
-                console.log("Cambio Registro");
-
-
                 NSeccion.innerText = 'Registro';
                 area.innerText = 'Usuarios';
+                console.log("Cambio Registro");
+                
+                document.getElementById('Principal').appendChild(formulario);
+
+                formulario.appendChild(formularioT);
+                formulario.appendChild(formularioC);
+                formulario.appendChild(formularioP);
+
+                formularioT.appendChild(titulo);
+
+                formularioC.appendChild(divF);
+                divF.appendChild(fotografiaL);
+                divF.appendChild(fotografiaI);
+
+                formularioC.appendChild(divNS);
+                divNS.appendChild(NSL);
+                divNS.appendChild(NSI);
+
+                formularioC.appendChild(divN);
+                divN.appendChild(nombreL);
+                divN.appendChild(nombreI);
+
+                formularioC.appendChild(divA);
+                divA.appendChild(apellidosL);
+                divA.appendChild(apellidosI);
+
+                formularioC.appendChild(divD);
+                divD.appendChild(direccionL);
+                divD.appendChild(direccionI);
+
+                formularioC.appendChild(divE);
+                divE.appendChild(emaiL);
+                divE.appendChild(emaiI);
+
+                formularioC.appendChild(divT);
+                divT.appendChild(telefonoL);
+                divT.appendChild(telefonoI);
+
+                formularioC.appendChild(divEd);
+                divEd.appendChild(edadL);
+                divEd.appendChild(edadI);
+
+                formularioC.appendChild(divC);
+                divC.appendChild(curpL);
+                divC.appendChild(curpI);
+
+                formularioC.appendChild(divNSS);
+                divNSS.appendChild(nssL);
+                divNSS.appendChild(nssI);
+                
+                
+                formularioP.appendChild(boton);
+                
             } else {
                 console.log("Ya se cambio el div")
             }
 
         }
-
+        
     }
 
 

@@ -7,10 +7,12 @@ Colores
 #6ba3be
 #274d60
 */
-h1,p {
+h1,p,a {
     font-size: calc(1vw + 1em);
+    text-decoration: none;
     margin: 0;
     padding: 0;
+    color: #ffff;
 }
 body{
     display: grid;
@@ -414,4 +416,90 @@ footer{
 .horasJornada {
     font-size: 0.9em;
     color: #555;
+}
+/*
+Formulario
+*/
+#Registro {
+    display: grid;
+    
+    margin-top: 10px;
+    border: #000000 solid 1px;
+    grid-template-rows:10% 80% 10%;
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+#formularioC{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#formularioC div{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Título del formulario */
+#Registro h2 {
+    text-align: center;
+    
+    color: #333333;
+}
+
+/* Etiquetas de los campos */
+#Registro label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Campos de entrada */
+#Registro input[type="text"],
+#Registro input[type="number"],
+#Registro input[type="email"],
+#Registro input[type="file"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Efectos de foco en los campos */
+#Registro input[type="text"]:focus,
+#Registro input[type="number"]:focus,
+#Registro input[type="email"]:focus,
+#Registro input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#formularioP{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+/* Botón de envío */
+#Registro button {
+    display: block;
+    width: 80%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para el botón */
+#Registro button:hover {
+    background-color: #0056b3;
 }
