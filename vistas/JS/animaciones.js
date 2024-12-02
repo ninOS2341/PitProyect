@@ -115,76 +115,76 @@ MenuDentro = () => {
                 fotografiaI.id = 'fotografia';
                 fotografiaI.name = 'fotografia';
                 fotografiaI.accept = 'image/*';
-                fotografiaI.required = '';
+                fotografiaI.required = 'true';
 
                 NSL.innerText = 'Numero de Seguridad';
                 NSI.type = "number";
                 NSI.id='id_empleado';
                 NSI.name = "id_empleado";
-                NSI.required = '';
+                NSI.required = 'true';
 
                 nombreL.innerText = 'Nombre(s)';
                 nombreI.type = 'text';
                 nombreI.id = 'nombre';
                 nombreI.name = 'nombre';
                 nombreI.maxLength = '50';
-                nombreI.required = '';
+                nombreI.required = 'true';
 
                 apellidosL.innerText = 'Apellidos';
                 apellidosI.type = 'text';
                 apellidosI.id = 'apellido';
                 apellidosI.name = 'apellido';
                 apellidosI.maxLength = '100';
-                apellidosI.required = '';
+                apellidosI.required = 'true';
 
                 edadL.innerText = 'Edad';
                 edadI.type = 'number';
                 edadI.id = 'edad';
                 edadI.name = 'edad';
                 edadI.max = '99';
-                edadI.required = '';
+                edadI.required = 'true';
                 
                 direccionL.innerText = 'Direccion';
                 direccionI.type = 'text';
                 direccionI.id = 'direccion';
                 direccionI.name = 'direccion';
                 direccionI.maxLength = '200';
-                direccionI.required = '';
+                direccionI.required = 'true';
 
                 emaiL.innerText = 'Email';
                 emaiI.type = 'email';
                 emaiI.id = 'email';
                 emaiI.name = 'email';
                 emaiI.maxLength = '100';
-                emaiI.required = '';
+                emaiI.required = 'true';
 
                 telefonoL.innerText = 'Teléfono';
                 telefonoI.type = 'text';
                 telefonoI.id = 'telefono';
                 telefonoI.name = 'telefono';
                 telefonoI.maxLength = '15';
-                telefonoI.required = '';
+                telefonoI.required = 'true';
 
                 curpL.innerText = 'CURP';
                 curpI.type = 'text';
                 curpI.id = 'curp';
                 curpI.name = 'curp';
                 curpI.maxLength = '18';
-                curpI.required = '';
+                curpI.required = 'true';
 
                 rfcL.innerText = 'RFC';
                 rfcI.type = 'text';
                 rfcI.id = 'rfc';
                 rfcI.name = 'rfc';
                 rfcI.maxLength = '13';
-                rfcI.required = '';
+                rfcI.required = 'true';
 
                 nssL.innerText = 'Numero de Seguro Social'
                 nssI.type = 'text';
                 nssI.id = 'nss';
                 nssI.name = 'nss';
                 nssI.maxLength = '12';
-                nssI.required = '';
+                nssI.required = 'true';
 
                 boton.type = 'submit';
                 boton.innerText = 'Guardar Empleados';
@@ -302,7 +302,7 @@ MenuinfoDentro = () => {
 
         icono.className = 'fa-solid fa-user';
         cambio.className = 'infoOp';
-        cambio.href = '../index.html'
+        cambio.href = '../index.html';
 
         btnSalir.onclick = () => {
             window.open();
